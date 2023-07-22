@@ -1,19 +1,19 @@
 """
-Training Transformer models using Pipeline Parallelism
+파이프라인 병렬화를 이용해 트랜스포머 학습시키기
 ======================================================
 
-**Author**: `Pritam Damania <https://github.com/pritamdamania87>`_
+**저자**: `Pritam Damania <https://github.com/pritamdamania87>`_
 
-This tutorial demonstrates how to train a large Transformer model across
-multiple GPUs using pipeline parallelism. This tutorial is an extension of the
-`Sequence-to-Sequence Modeling with nn.Transformer and TorchText <https://pytorch.org/tutorials/beginner/transformer_tutorial.html>`__ tutorial
-and scales up the same model to demonstrate how pipeline parallelism can be
-used to train Transformer models.
+이 튜토리얼은 파이프라인 병렬화를 통해 여러 개의 GPU를 이용하여 
+거대한 트랜스포머모델을 학습하는 학습하는 방법에 대해서 설명합니다.
+이 튜토리얼은 'nn.Transformer와 TorchText로 시퀀스-투-시퀀스 모델링하기 <https://pytorch.org/tutorials/beginner/transformer_tutorial.html>'__ 튜토리얼의 확장판이며, 
+파이프라인 병렬화가 어떻게 트랜스포머 모델들을 학습시키는데 사용되는지를 보여주기 위해 
+이전 모델에서 규모를 증가시켰습니다.
 
-Prerequisites:
+선수과목:
 
-    * `Pipeline Parallelism <https://pytorch.org/docs/stable/pipeline.html>`__
-    * `Sequence-to-Sequence Modeling with nn.Transformer and TorchText <https://pytorch.org/tutorials/beginner/transformer_tutorial.html>`__
+    * `파이프라인 병렬화 <https://pytorch.org/docs/stable/pipeline.html>`__
+    * `nn.Transformer와 TorchText로 시퀀스-투-시퀀스 모델링하기 <https://pytorch.org/tutorials/beginner/transformer_tutorial.html>`__
 """
 
 
